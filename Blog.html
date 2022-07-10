@@ -1,0 +1,124 @@
+<html>
+
+<head>
+    <title>Creating Blog Page</title>
+    <link rel="stylesheet" href="assets/css/index.css" />
+</head>
+
+<body>
+    <!-- NavBar -->
+    <nav>
+        <div class="left-side">
+            <a href="index.html">
+                <img src="assets/images/logo.png" alt="">
+            </a>
+            <ul>
+                <li>
+                    <a  href="index.html">Home</a>
+                </li>
+                <li>
+                    <a class="active" href="Blog.html">Blog</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="right-side">
+            <a href="Contact-me.html">Hire Me</a>
+        </div>
+    </nav>
+
+    <!-- Blog -->
+    <div class="blog">
+        <div class="blog-form">
+
+            <!-- Form -->
+            <div class="form-container" >
+                <form onsubmit="addBlog(event)">
+                    <h1>Create Post Project</h1>
+                    <div>
+                        <label for="input-blog-title">Project Name</label>
+                        <input type="text" id="input-blog-title" />
+                    </div>
+                    
+                    <!-- Date -->
+                    <div class="date-input-group">
+                        <div class="input-date">
+                            <label for="start-date">Start Date</label>
+                            <input type="datetime-local" id="start-date">
+                        </div>
+                        <div class="input-date">
+                            <label for="end-date">End Date</label>
+                            <input type="datetime-local" id="end-date">
+                        </div>
+                    </div>
+                    
+                    <!-- Desc -->
+                    <div>
+                        <label for="input-blog-content">Descriptions</label>
+                        <textarea id="input-blog-content" style="resize: none;"></textarea>
+                    </div>
+                    
+                    <!-- Tech -->
+                    <div class="tech" >
+                         Technologies
+                    </div>
+                    <div class="checkboxes">
+                        <div class="left">
+                            <div class="njs">
+                                <label for="nodejs">Node.Js</label>
+                                <input type="checkbox" name="nodejs"
+                                        id="nodejs" value="Node.Js">
+                            </div>
+                            <div class="rjs">
+                                <label for="reactjs">React.Js</label>
+                                <input type="checkbox" name="reactjs"
+                                        id="reactjs" value="React.Js">
+                            </div>
+                        </div>
+                        <div class="right">
+                            <div class="nxj">
+                                <label for="nextjs">Next.Js</label>
+                                <input type="checkbox" name="nextjs"
+                                        id="nextjs" value="Next.Js">
+                            </div>
+                            <div class="tsc">
+                                <label for="typescript">Typesript.Js</label>
+                                <input type="checkbox" name="typescript"
+                                        id="typescript" value="React.Js">
+                            </div>
+                        </div>
+                    </div>
+                 <div class="image-group">
+                     <div class="updload">
+                         <label for="upload" class="upload-btn">Upload Image</label>
+                         <input type="file" id="upload" accept="image/*" style="display: none;" 
+                         onchange="preview(event.target.files[0])">
+                     </div>
+                     <div class="input-blog-image-group">
+                         <label for="input-blog-image">
+                             <p>Attach File</p>
+                             <img src="assets/images/file.png" alt="file" />
+                         </label>
+                         <input type="file" id="input-blog-image" hidden />
+                     </div>
+                 </div>   
+
+                    <div class="button-group">
+                        <button type="submit" class="btn-submit">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!--div id="test">
+        </!--div>
+        <hr class="line"/-->
+
+        <!-- List Blog -->
+        <div id="contents" class="blog-list"></div>
+
+    </div>
+    <script src="assets/js/blog.js"></script>
+</body>
+
+</html>

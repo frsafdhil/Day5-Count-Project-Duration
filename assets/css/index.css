@@ -1,0 +1,480 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Roboto', sans-serif;
+}
+
+nav {
+    background-color: #34353E;
+    height: 7vh;
+    display: flex;
+}
+
+nav div {
+    display: flex;
+    align-items: center;
+}
+
+nav .left-side {
+    flex: 50%;
+    padding-left: 20px;
+}
+
+nav .right-side {
+    flex: 50%;
+    justify-content: flex-end;
+    padding-right: 90px;
+}
+
+nav ul {
+    list-style: none;
+    margin-left: 40px;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 40px;
+    font-size: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a.active {
+    color: #FF6000;
+    font-weight: 900;
+}
+
+nav .right-side a {
+    text-decoration: none;
+    font-size: 15px;
+    color: white;
+    background-color: #FF6000;
+    padding: 8px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+
+.container {
+    display: flex;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgb(79, 79, 79);
+    height: 69vh;
+    width: 170vh;
+    padding: 5px;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    position: relative;
+}
+
+.container1{
+    flex: 70%;
+    margin-right: 50px;
+    padding-left: 90px;
+    text-align: justify;
+    margin-top: 50px;
+    font-size: 17px;
+}
+
+.container .contact-btn {
+    display: inline-block;
+    text-decoration: none;
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: white;
+    border-radius: 30px;
+    padding: 5px 20px;
+    font-size: 15px;
+    background: #34353E;
+    cursor: pointer;
+}
+
+.download {
+    display: inline-block;
+    text-decoration: none;
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: black;
+    border-radius: 30px;
+    padding: 5px 20px;
+    font-size: 15px;
+    cursor: pointer;
+    font-weight: bold;
+    }
+
+.fa-download {
+    margin-left: 5px;
+    color: black;
+    display: inline-block;
+}
+
+.sosmed {
+    font-size: 40px;
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+    align-items: center;
+}
+
+.sosmed > a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    width: 30px;
+    height: 10px;
+    margin: 5px 0px;
+    padding: 15px;
+}
+
+.container2{
+    flex: 30%;
+    padding-right: 90px;
+    position: relative;
+}
+
+.card {
+    margin: auto;
+    margin: 20px 50px 20px;
+    width: 250px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px grey;
+}
+
+.card img {
+    margin: auto;
+    max-width: 100%;
+    width: 289px;
+    object-fit: scale-down;
+    border-radius: 20px;
+}
+
+.data {
+    text-align: center;
+    margin: 0;
+    padding: 0px 0px 10px 0px;
+    font-size: 15px;
+}
+
+/* Blog */
+
+
+/* Blog Form */
+.blog-form {
+    padding: 50px 0;
+    display: flex;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+.blog-form .form-container {
+    width: 500px;
+}
+
+.blog-form .form-container h1 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+/* Desc */
+.blog-form form label {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.blog-form form input,
+textarea,
+select {
+    width: 100%;
+    font-size: 20px;
+    font-weight: 400;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    background: #f4f3f3;
+    border: 1px solid #c4c4c4;
+    border-radius: 8px;
+}
+
+.blog-form form textarea {
+    height: 250px;
+}
+
+.blog-form form .input-blog-image-group {
+    font-size: 20px;
+    font-weight: 400;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    background: #f4f3f3;
+    border: 1px solid #c4c4c4;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.blog-form form .input-blog-image-group label p {
+    font-size: 15px;
+}
+
+.blog-form form .input-blog-image-group label {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.blog-form form .button-group {
+    text-align: right;
+}
+
+.blog-form form button {
+    margin-top: 0px;
+    padding: 8px 20px;
+    font-size: 17px;
+    background: #ec4d37;
+    border-radius: 8px;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+.blog hr {
+    border: 1px solid #dbdbdb;
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/* Blog list */
+.blog .blog-list {
+    margin-top: 80px;
+    margin-bottom: 80px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.blog .blog-list .blog-list-item {
+    width: 80%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 2px solid #dbdbdb;
+    border-radius: 8px;
+    display: flex;
+}
+
+.blog .blog-list .blog-list-item .blog-image {
+    flex: 1;
+}
+
+.blog .blog-list .blog-list-item .blog-image img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.blog .blog-list .blog-list-item .blog-content {
+    padding-left: 20px;
+    flex: 2;
+}
+
+.blog .blog-list .btn-group {
+    text-align: right;
+    margin-bottom: 20px;
+}
+
+.blog .blog-list .btn-group .btn-edit {
+    padding: 5px 10px;
+    border: 0;
+    border-radius: 4px;
+    background: #dbdbdb;
+}
+
+.blog .blog-list .btn-group .btn-post {
+    padding: 5px 10px;
+    border: 0;
+    border-radius: 4px;
+    background: #ec4d37;
+    color: #fff;
+}
+
+.blog .blog-list h1 a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.blog .blog-list .detail-blog-content {
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 20px;
+}
+
+.blog .blog-list .blog-list-item p {
+    margin-top: 20px;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: justify;
+}
+
+/* Blog Detail */
+.blog-detail {
+    display: flex;
+    justify-content: center;
+}
+
+.blog-detail-container {
+    width: 80%;
+    margin: 40px 0;
+}
+
+.blog-detail-container img {
+    width: 100%;
+}
+
+.blog-detail-container h1 {
+    font-style: normal;
+    font-weight: 800;
+    font-size: 44px;
+    line-height: 120%;
+    margin-bottom: 15px;
+}
+
+.blog-detail-container .author {
+    font-weight: 100;
+    font-size: 20px;
+    line-height: 120%;
+    margin-bottom: 20px;
+}
+
+.blog-detail-container p {
+    margin-top: 40px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 140%;
+    text-align: justify;
+}
+
+
+/* Date */
+.date-input-group{
+    display: flex;
+    justify-content: space-between;
+}
+
+.input-date{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.input-date:first-child{
+    flex: 50%;
+    margin-right: 1em;
+}
+
+.input-date:last-child{
+    flex: 50%;
+}
+
+.input-date input{
+    width: 100%;
+    padding: 1em;
+    font-size: 1em;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Tech */
+.tech{
+    margin-bottom: 1em;
+    font-size: 20px;
+}
+
+.checkboxes{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1em;
+}
+
+.left{
+    /*display: flex;*/
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: left;   
+    flex: 50%;
+}
+
+.right{
+    /*display: flex;*/
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: left;   
+    flex: 50%;
+}
+
+.checkbox-group:first-child{
+    margin-bottom: 1em;
+}
+
+/* Web App */
+
+.banner {
+    display: flex;
+    width: 100%;
+    height: 20em;
+    margin-bottom: 5em;
+}
+
+.banner .blog-detail-image{
+    flex: 60%;
+    height: 100%;
+}
+
+.banner .blog-detail-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.banner .info{
+    flex: 40%;
+    margin-left: 5em;
+    display: flex;
+    flex-direction: column;
+}
+
+.banner .info .duration{
+    margin-bottom: 2em;
+}
+
+.info .duration h4, 
+.info .tech h4{
+    margin-bottom: 2em;
+}
+
+.info .tech .stacks{
+    display: flex;
+    font-size: 1em;
+}
+
+.info .stacks .right{
+    margin-left: 2em;
+}
+
+.content p{
+    text-align: justify;
+}
+
