@@ -334,7 +334,9 @@ select {
 
 .blog-detail-container {
     width: 80%;
-    margin: 40px 0;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .blog-detail-container img {
@@ -399,10 +401,6 @@ select {
 .tech{
     margin-bottom: 1em;
     font-size: 20px;
-    text-align: center;
-}
-
-.label{
     margin: auto;
     text-align: center;
 }
@@ -420,6 +418,7 @@ select {
     justify-content: center;
     text-align: center;   
     flex: 50%;
+    margin-top: 10px;
 }
 
 .right{
@@ -429,8 +428,59 @@ select {
     justify-content: center;
     text-align: center;   
     flex: 50%;
+    margin-top: 10px;
 }
 
 .checkbox-group:first-child{
     margin-bottom: 1em;
 }
+
+/* Web App */
+
+.banner {
+    display: flex;
+    width: 100%;
+    height: 20em;
+    font-size: 20px;
+}
+
+.banner .blog-detail-image{
+    flex: 60%;
+    height: 100%;
+}
+
+.banner .blog-detail-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.banner .info{
+    flex: 40%;
+    margin-left: 5em;
+    display: flex;
+    flex-direction: column;
+}
+
+.banner .info .duration{
+    margin-bottom: 2em;
+}
+
+.info .duration h4, 
+.info .tech h4{
+    margin-bottom: 2em;
+}
+
+.info .tech .stacks{
+    display: flex;
+    font-size: 1em;
+}
+
+.info .stacks .right{
+    margin-left: 2em;
+}
+
+.content p{
+    text-align: justify;
+}
+
